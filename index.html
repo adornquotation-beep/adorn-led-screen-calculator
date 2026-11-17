@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(129%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(159%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#7b6d14">
+<meta name="description" content="ADORN LED SCREEN CALCULATOR | deployed with HTMLaunch">
+<link rel="canonical" href="https://adornquotation-beep.github.io/adorn-led-screen-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ADORN LED SCREEN CALCULATOR">
+<meta property="og:title" content="ADORN LED SCREEN CALCULATOR">
+<meta property="og:description" content="ADORN LED SCREEN CALCULATOR | deployed with HTMLaunch">
+<meta property="og:url" content="https://adornquotation-beep.github.io/adorn-led-screen-calculator/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fadornquotation-beep.github.io%2Fadorn-led-screen-calculator%2F?w=1200&h=630">
+<meta property="og:image:alt" content="ADORN LED SCREEN CALCULATOR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ADORN LED SCREEN CALCULATOR">
+<meta name="twitter:description" content="ADORN LED SCREEN CALCULATOR | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fadornquotation-beep.github.io%2Fadorn-led-screen-calculator%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="ADORN LED SCREEN CALCULATOR">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADORN LED SCREEN CALCULATOR</title>
+<style>
+:root{--navy:#14243a;--gold:#c99a3b;--bg:#f3f5f8;--ink:#1e293b;--muted:#64748b;--line:#dce2ea}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+header{background:linear-gradient(120deg,#101d30,#263d59);color:#fff;padding:30px 18px;text-align:center;border-bottom:4px solid var(--gold)}
+.brand{font-size:14px;letter-spacing:5px;color:#e5bd70;font-weight:700;margin-bottom:8px}
+h1{font-size:clamp(22px,4vw,34px);margin:0;letter-spacing:1px}
+.sub{color:#d4dce7;font-size:12px;letter-spacing:2px;margin-top:9px}
+main{max-width:1000px;margin:26px auto;padding:0 16px 40px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:18px;box-shadow:0 5px 18px #172b440a}
+h2{font-size:17px;margin:0 0 18px;color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.field label{display:block;font-size:12px;font-weight:700;color:#475569;margin-bottom:7px}
+input,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:2px solid #c99a3b55;border-color:var(--gold)}
+.hint{font-size:11px;color:var(--muted);margin-top:5px;line-height:1.4}
+.orientation{display:flex;gap:10px;flex-wrap:wrap}
+.orientation label{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:11px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:700}
+.orientation input{width:auto;accent-color:var(--gold)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+button{border:0;border-radius:8px;padding:12px 18px;font-weight:700;cursor:pointer;font-size:14px}
+.primary{background:var(--gold);color:#182334}.secondary{background:#e8edf3;color:#26364b}
+.results{display:none}.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.metric{background:#f7f9fb;border:1px solid var(--line);padding:15px;border-radius:10px}
+.metric .k{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.metric .v{font-size:23px;font-weight:800;color:var(--navy);margin-top:7px;overflow-wrap:anywhere}
+.metric .u{font-size:11px;color:var(--muted);margin-top:3px}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:13px}
+td{padding:11px 9px;border-bottom:1px solid var(--line)}td:first-child{color:var(--muted)}td:last-child{text-align:right;font-weight:700}
+.note{background:#fff8e9;border-left:4px solid var(--gold);padding:12px 14px;border-radius:5px;font-size:12px;line-height:1.5;margin-top:15px}
+footer{text-align:center;color:var(--muted);font-size:11px;padding:10px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.result-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:17px}}
+@media print{body{background:#fff}header{print-color-adjust:exact;-webkit-print-color-adjust:exact}.panel{box-shadow:none;break-inside:avoid}.actions{display:none}main{margin:10px auto}.results{display:block!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">ADORN</div>
+  <h1>LED SCREEN CALCULATOR</h1>
+  <div class="sub">ADORN LED SCREEN UAE · PROFESSIONAL DISPLAY TOOL</div>
+</header>
+<main>
+  <section class="panel">
+    <h2>Screen Requirements</h2>
+    <div class="grid">
+      <div class="field"><label for="screenW">Required screen width (cm)</label><input id="screenW" type="number" min="0.1" step="0.1" value="80"></div>
+      <div class="field"><label for="screenH">Required screen height (cm)</label><input id="screenH" type="number" min="0.1" step="0.1" value="192"></div>
+      <div class="field"><label for="pitch">Pixel pitch</label><select id="pitch"><option value="1.25">P1.25</option><option value="1.5">P1.5</option><option value="1.56">P1.56</option><option value="1.875">P1.875</option><option value="2">P2</option><option value="2.5" selected>P2.5</option><option value="3">P3</option><option value="4">P4</option><option value="5">P5</option><option value="6">P6</option><option value="6.67">P6.67</option><option value="8">P8</option><option value="10">P10</option></select></div>
+      <div class="field"><label for="moduleW">Module width (mm)</label><input id="moduleW" type="number" min="1" step="1" value="320"></div>
+      <div class="field"><label for="moduleH">Module height (mm)</label><input id="moduleH" type="number" min="1" step="1" value="160"></div>
+      <div class="field"><label for="modulePxW">Module pixel width (px)</label><input id="modulePxW" type="number" min="0" step="1" placeholder="Optional — e.g. 128"><div class="hint">Enter the manufacturer's exact module pixel matrix. Leave blank to estimate from pixel pitch.</div></div>
+      <div class="field"><label for="modulePxH">Module pixel height (px)</label><input id="modulePxH" type="number" min="0" step="1" placeholder="Optional — e.g. 64"></div>
+      <div class="field"><label for="modulePower">Power per module (W)</label><input id="modulePower" type="number" min="0" step="0.1" placeholder="Optional"></div>
+      <div class="field"><label for="moduleWeight">Weight per module (kg)</label><input id="moduleWeight" type="number" min="0" step="0.01" placeholder="Optional"></div>
+      <div class="field"><label>Module orientation</label><div class="orientation"><label><input type="radio" name="orientation" value="landscape"> Landscape</label><label><input type="radio" name="orientation" value="portrait" checked> Portrait (rotated 90°)</label></div><div class="hint">Portrait rotates each module: 320 × 160 mm becomes 160 × 320 mm.</div></div>
+    </div>
+    <div class="actions"><button class="primary" onclick="calculate()">Calculate</button><button class="secondary" onclick="window.print()">Print / Save PDF</button><button class="secondary" onclick="resetForm()">Reset</button></div>
+  </section>
+
+  <section class="panel results" id="results">
+    <h2>Calculation Results</h2>
+    <div class="result-grid">
+      <div class="metric"><div class="k">Total modules</div><div class="v" id="totalModules">—</div><div class="u">Nos.</div></div>
+      <div class="metric"><div class="k">Actual screen size</div><div class="v" id="actualSize">—</div><div class="u">Width × Height (mm)</div></div>
+      <div class="metric"><div class="k">Actual display area</div><div class="v" id="area">—</div><div class="u">m²</div></div>
+      <div class="metric"><div class="k">Total resolution</div><div class="v" id="resolution">—</div><div class="u">Pixels (W × H)</div></div>
+      <div class="metric"><div class="k">Modules horizontally</div><div class="v" id="modulesX">—</div><div class="u">Nos.</div></div>
+      <div class="metric"><div class="k">Modules vertically</div><div class="v" id="modulesY">—</div><div class="u">Nos.</div></div>
+      <div class="metric"><div class="k">Total pixels</div><div class="v" id="totalPixels">—</div><div class="u">W × H pixel count</div></div>
+      <div class="metric"><div class="k">Aspect ratio</div><div class="v" id="aspectRatio">—</div><div class="u">Actual screen W:H</div></div>
+      <div class="metric"><div class="k">Pixel density</div><div class="v" id="pixelDensity">—</div><div class="u">Pixels per m² (approx.)</div></div>
+      <div class="metric"><div class="k">Estimated max power</div><div class="v" id="totalPower">Not entered</div><div class="u">W — based on entered module rating</div></div>
+      <div class="metric"><div class="k">Estimated module weight</div><div class="v" id="totalWeight">Not entered</div><div class="u">kg — based on entered module weight</div></div>
+    </div>
+    <table>
+      <tr><td>Required screen size</td><td id="requiredSize">—</td></tr>
+      <tr><td>Installed module size</td><td id="orientedModule">—</td></tr>
+      <tr><td>Pixel matrix per module</td><td id="modulePixels">—</td></tr>
+      <tr><td>Pixel pitch selected</td><td id="selectedPitch">—</td></tr>
+      <tr><td>Physical size difference</td><td id="difference">—</td></tr>
+    </table>
+    <div class="note"><strong>Important:</strong> Module quantities are rounded UP to whole modules. For accurate total resolution, enter the exact module pixel width and height from the manufacturer's datasheet. If left blank, resolution is estimated from module dimensions ÷ selected pixel pitch. Power and weight totals appear only when their per-module ratings are entered. These estimates do not replace cabinet, PSU, receiving-card, or system-level engineering calculations.</div>
+  </section>
+  <footer>ADORN LED SCREEN UAE · For estimation only. Verify module specifications and cabinet design before ordering or installation.</footer>
+</main>
+<script>
+function fmt(n,d=2){return Number(n.toFixed(d)).toLocaleString('en-US',{maximumFractionDigits:d});}
+function calculate(){
+ const rw=Number(document.getElementById('screenW').value), rh=Number(document.getElementById('screenH').value);
+ const mw=Number(document.getElementById('moduleW').value), mh=Number(document.getElementById('moduleH').value);
+ const pitch=Number(document.getElementById('pitch').value);
+ const enteredPxW=Number(document.getElementById('modulePxW').value);
+ const enteredPxH=Number(document.getElementById('modulePxH').value);
+ const powerPerModule=document.getElementById('modulePower').value===''?null:Number(document.getElementById('modulePower').value);
+ const weightPerModule=document.getElementById('moduleWeight').value===''?null:Number(document.getElementById('moduleWeight').value);
+ if(!rw||!rh||!mw||!mh||rw<=0||rh<=0||mw<=0||mh<=0||!pitch){alert('Please enter valid positive screen and module dimensions.');return;}
+ if((enteredPxW>0)!==(enteredPxH>0)){alert('Enter both module pixel width and height, or leave both blank.');return;}
+ if((powerPerModule!==null&&powerPerModule<0)||(weightPerModule!==null&&weightPerModule<0)){alert('Power and weight cannot be negative.');return;}
+ const portrait=document.querySelector('input[name="orientation"]:checked').value==='portrait';
+ const ow=portrait?mh:mw, oh=portrait?mw:mh;
+ const reqW=rw*10, reqH=rh*10;
+ const nx=Math.ceil(reqW/ow), ny=Math.ceil(reqH/oh);
+ const actualW=nx*ow, actualH=ny*oh;
+ const pxModuleW=enteredPxW>0?enteredPxW:Math.round(ow/pitch);
+ const pxModuleH=enteredPxH>0?enteredPxH:Math.round(oh/pitch);
+ const totalPxW=nx*pxModuleW, totalPxH=ny*pxModuleH;
+ const gcd=(a,b)=>b?gcd(b,a%b):a;
+ const ratioDiv=gcd(actualW,actualH);
+ document.getElementById('totalModules').textContent=(nx*ny).toLocaleString();
+ document.getElementById('actualSize').textContent=fmt(actualW,0)+' × '+fmt(actualH,0);
+ document.getElementById('area').textContent=fmt(actualW*actualH/1000000,4);
+ document.getElementById('resolution').textContent=(nx*pxModuleW).toLocaleString()+' × '+(ny*pxModuleH).toLocaleString();
+ document.getElementById('modulesX').textContent=nx;
+ document.getElementById('modulesY').textContent=ny;
+ document.getElementById('totalPixels').textContent=totalPxW.toLocaleString()+' × '+totalPxH.toLocaleString();
+ document.getElementById('aspectRatio').textContent=(actualW/ratioDiv)+':'+(actualH/ratioDiv);
+ document.getElementById('pixelDensity').textContent=fmt((totalPxW*totalPxH)/(actualW*actualH/1000000),0);
+ document.getElementById('totalPower').textContent=powerPerModule===null?'Not entered':fmt(powerPerModule*nx*ny,1)+' W';
+ document.getElementById('totalWeight').textContent=weightPerModule===null?'Not entered':fmt(weightPerModule*nx*ny,2)+' kg';
+ document.getElementById('requiredSize').textContent=fmt(reqW,0)+' × '+fmt(reqH,0)+' mm';
+ document.getElementById('orientedModule').textContent=fmt(ow,0)+' × '+fmt(oh,0)+' mm';
+ document.getElementById('modulePixels').textContent=pxModuleW+' × '+pxModuleH+' px'+(enteredPxW>0?' (manufacturer input)':' (pitch estimate)');
+ document.getElementById('selectedPitch').textContent='P'+pitch+' mm';
+ document.getElementById('difference').textContent='+'+fmt(actualW-reqW,0)+' mm width / +'+fmt(actualH-reqH,0)+' mm height';
+ document.getElementById('results').style.display='block';
+}
+function resetForm(){document.getElementById('screenW').value=80;document.getElementById('screenH').value=192;document.getElementById('pitch').value='2.5';document.getElementById('moduleW').value=320;document.getElementById('moduleH').value=160;document.getElementById('modulePxW').value='';document.getElementById('modulePxH').value='';document.getElementById('modulePower').value='';document.getElementById('moduleWeight').value='';document.querySelector('input[name="orientation"][value="portrait"]').checked=true;document.getElementById('results').style.display='none';}
+calculate();
+</script>
+</body>
+</html>
